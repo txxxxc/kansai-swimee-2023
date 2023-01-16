@@ -52,7 +52,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tdb-ub-vcb"/>
                     <connections>
-                        <outlet property="button" destination="Wtx-CY-DB5" id="0t4-nO-Q3j"/>
+                        <outlet property="buton" destination="Wtx-CY-DB5" id="0t4-nO-Q3j"/>
                         <outlet property="imageView" destination="FPD-wL-YRj" id="KWE-uE-zQp"/>
                         <segue destination="Sqg-Pp-5SJ" kind="show" identifier="toPokemonDetail" id="wXN-pB-0zQ"/>
                     </connections>

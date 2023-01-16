@@ -2,21 +2,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
-@IBOutlet var button: UIButton!
+@IBOutlet var buton: UIButton!
 @IBOutlet var imageView: UIImageView!
 var currentPokemon: Pokemon? = nil
 var currentImage: UIImage? = nil
 
 override func viewDidLoad() {
 super.viewDidLoad()
-button.isHidden = true
+buton.isHidden = true
 }
     
 @IBAction func roll() {
 Task {
-button.setTitle("読み込み中...", for: .normal)
-button.isEnabled = false
-button.isHidden = false
+buton.setTitle("読み込み中...", for: .normal)
+buton.isEnabled = false
+buton.isHidden = false
 // ポケモンをランダムに取得
 let (pokemon, pokemonImage) = try! await fetchRandomPokemon()
 // 画面遷移用に保存
@@ -25,8 +25,8 @@ currentPokemon = pokemon
 
 // 画像を反映
 imageView.image = pokemonImage
-button.setTitle("詳細へ", for: .normal)
-button.isEnabled = true
+buton.setTitle("詳細へ", for: .normal)
+buton.isEnabled = true
 }
 }
     
